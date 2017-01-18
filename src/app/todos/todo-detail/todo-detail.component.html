@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedTodo?.title}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary" (click)="onEdit()">Edit</button>
+    <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{selectedTodo?.description}}</p>
+  </div>
+</div>

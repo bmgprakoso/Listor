@@ -4,17 +4,34 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header.component';
+import { TodoListComponent } from './todos/todo-list/todo-list.component';
+import { TodoItemComponent } from './todos/todo-list/todo-item.component';
+import { TodoEditComponent } from './todos/todo-edit/todo-edit.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodoDetailComponent } from './todos/todo-detail/todo-detail.component';
+import { TodoStartComponent } from './todos/todo-start.component';
+import {TodoService} from "./todos/todo.service";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    TodoListComponent,
+    TodoItemComponent,
+    TodoEditComponent,
+    TodosComponent,
+    TodoDetailComponent,
+    TodoStartComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
