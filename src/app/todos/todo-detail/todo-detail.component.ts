@@ -10,8 +10,8 @@ import {Router, ActivatedRoute} from "@angular/router";
 })
 export class TodoDetailComponent implements OnInit {
   selectedTodo: Todo;
-  private todoIndex: number;
   private subscription: Subscription;
+  private todoIndex: number;
 
   constructor(private router: Router, private route: ActivatedRoute, private todoService: TodoService) { }
 

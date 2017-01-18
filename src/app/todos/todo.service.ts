@@ -4,8 +4,8 @@ import {Todo} from "./todo";
 @Injectable()
 export class TodoService {
   private todos: Todo[] = [
-      new Todo('Test Ruma', 'Tes Ruma di Rumah', 'hari ini', 'besok', 'High'),
-      new Todo('Tidur', 'Tidur di Rumah', 'hari ini', 'besok', 'Medium')
+      new Todo('Test Ruma', 'Tes Ruma di Rumah', '2017-01-18', '2017-02-05', 'High'),
+      new Todo('Tidur', 'Tidur di Rumah', '2017-01-18', '2017-02-05', 'Medium')
   ];
 
   constructor() { }
