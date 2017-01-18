@@ -9,9 +9,10 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ```bash
    $ npm install -g angular-cli
 ```
-* Navigate inside project directory and run `ng serve`
+* Navigate inside project directory, then run `npm install` and `ng serve`
 
 ```bash
+   $ npm install
    $ ng serve
 ```
 * In browser, go to `http://localhost:4200/`
