@@ -28,10 +28,6 @@ export class TodoService {
     this.todos.splice(this.todos.indexOf(todo), 1);
   }
 
-  clearCompletedTodos() {
-    this.completedTodos = [];
-  }
-
   addTodo(todo: Todo) {
     this.todos.push(todo);
   }

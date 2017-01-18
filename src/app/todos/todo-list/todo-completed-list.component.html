@@ -6,14 +6,6 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <button class="btn btn-warning" (click)="clearAll()" *ngIf="completedTodos.length">
-      <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Clear All
-    </button>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="col-xs-12">
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let cTodo of completedTodos">{{cTodo.title}}</li>
     </ul>

@@ -14,9 +14,4 @@ export class TodoCompletedListComponent implements OnInit {
     this.completedTodos = this.todoService.getCompletedTodos();
   }
 
-  clearAll() {
-    this.completedTodos = [];
-    this.todoService.clearCompletedTodos();
-  }
-
 }
