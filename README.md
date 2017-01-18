@@ -9,7 +9,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 ```bash
    $ npm install -g angular-cli
 ```
-* Navigate to project directory (`/listor`) and run `ng serve`
+* Navigate inside project directory and run `ng serve`
 
 ```bash
    $ ng serve
