@@ -10,7 +10,6 @@ import { TodoItemComponent } from './todos/todo-list/todo-item.component';
 import { TodoEditComponent } from './todos/todo-edit/todo-edit.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoDetailComponent } from './todos/todo-detail/todo-detail.component';
-import { TodoStartComponent } from './todos/todo-start.component';
 import {TodoService} from "./todos/todo.service";
 import {AppRoutingModule} from "./app-routing.module";
 import { TodoCompletedListComponent } from './todos/todo-list/todo-completed-list.component';
@@ -24,7 +23,6 @@ import { TodoCompletedListComponent } from './todos/todo-list/todo-completed-lis
     TodoEditComponent,
     TodosComponent,
     TodoDetailComponent,
-    TodoStartComponent,
     TodoCompletedListComponent
   ],
   imports: [
