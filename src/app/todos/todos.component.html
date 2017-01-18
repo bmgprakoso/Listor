@@ -5,12 +5,23 @@
     </a>
   </div>
 </div>
-<hr>
-<div class="row">
-  <div class="col-md-5">
-    <app-todo-list></app-todo-list>
+<br>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h3>Upcoming Tasks</h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-5">
+        <app-todo-list></app-todo-list>
+      </div>
+      <div class="col-md-7">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
-  <div class="col-md-7">
-    <router-outlet></router-outlet>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <app-todo-completed-list></app-todo-completed-list>
   </div>
 </div>

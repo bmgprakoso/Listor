@@ -13,6 +13,7 @@ import { TodoDetailComponent } from './todos/todo-detail/todo-detail.component';
 import { TodoStartComponent } from './todos/todo-start.component';
 import {TodoService} from "./todos/todo.service";
 import {AppRoutingModule} from "./app-routing.module";
+import { TodoCompletedListComponent } from './todos/todo-list/todo-completed-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {AppRoutingModule} from "./app-routing.module";
     TodoEditComponent,
     TodosComponent,
     TodoDetailComponent,
-    TodoStartComponent
+    TodoStartComponent,
+    TodoCompletedListComponent
   ],
   imports: [
     BrowserModule,

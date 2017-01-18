@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, OnDestroy} from '@angular/core';
 import {Todo} from "../todo";
 import {Subscription} from "rxjs";
 import {TodoService} from "../todo.service";
@@ -8,7 +8,7 @@ import {Router, ActivatedRoute} from "@angular/router";
   selector: 'app-todo-detail',
   templateUrl: './todo-detail.component.html'
 })
-export class TodoDetailComponent implements OnInit {
+export class TodoDetailComponent implements OnInit, OnDestroy {
   selectedTodo: Todo;
   private subscription: Subscription;
   private todoIndex: number;
@@ -33,7 +33,12 @@ export class TodoDetailComponent implements OnInit {
     this.router.navigate(['/todo']);
   }
 
-  onDestroy() {
+  onComplete() {
+    this.todoService.markCompleted(this.selectedTodo);
+    this.router.navigate(['/todo']);
+  }
+
+  ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
